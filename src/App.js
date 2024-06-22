@@ -3,8 +3,19 @@ import { TypeAnimation } from 'react-type-animation';
 import Music from './components/Music';
 import team, {workdata} from './components/data.js';
 import { Linkedin, Instagram, Github } from 'lucide-react';
+import { useRef } from 'react';
+
 
 function App() {
+
+  const whatWeDoRef = useRef(null);
+  const ourWorkRef = useRef(null);
+  const ourTeamRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className='w-screen h-screen overflow-x-hidden relative'>
       <AnimatedCanvas/>
@@ -13,13 +24,14 @@ function App() {
         <div className='w-3/5 mt-10 h-full mx-auto relative'>
             {/* navbar */}
             <navba className='w-full flex justify-between items-center h-[3rem]'>
-                <Music />
-                <ul className='flex justify-end'>
-                    <li className='mx-3 text-black cursor-pointer hover:border-b border-black text-base duration-1000'>What we do</li>
-                    <li className='mx-3 text-black cursor-pointer hover:border-b border-black text-base duration-1000'>Our work</li>
-                    <li className='mx-3 text-black cursor-pointer hover:border-b border-black text-base duration-1000'>Our team</li>
-                </ul>
+              <Music />
+              <ul className='flex justify-end'>
+                <li className='mx-3 text-black cursor-pointer hover:border-b border-black text-base duration-1000' onClick={() => scrollToSection(whatWeDoRef)}>What we do</li>
+                <li className='mx-3 text-black cursor-pointer hover:border-b border-black text-base duration-1000' onClick={() => scrollToSection(ourWorkRef)}>Our work</li>
+                <li className='mx-3 text-black cursor-pointer hover:border-b border-black text-base duration-1000' onClick={() => scrollToSection(ourTeamRef)}>Our team </li>
+              </ul>
             </navba>
+
 
             {/* hero */}
             <section className='flex flex-row w-full' style={{height: 'calc(100vh - 5.5rem)'}}>   {/* 3rem is navbar, 2.5rem is margin */}
@@ -48,15 +60,16 @@ function App() {
 
 
             {/* what we do */}
-            <section className='flex justify-between w-full my-20'>
+            <section ref={whatWeDoRef} className='flex justify-between w-full my-20'>
               <h2 className='w-2/5 h-full text-4xl text-black text-center'> What we do</h2>
               <p className='w-3/5 text-center'>
                 We are a team of developers who are passionate about creating beautiful and functional websites. Our main objective is to fullfill web development needs of the ITC community. We are always looking for new projects to work on and new people to collaborate with. If you have a project in mind, feel free to reach out to us!
               </p>
             </section>
 
+
             {/* Our Woek  */}
-            <section className='flex flex-col w-full'>
+            <section ref={ourWorkRef} className='flex flex-col w-full'>
                 <h2 className='w-2/5 h-full mb-10 text-center text-4xl text-black flex flex-col'> Our work</h2>
                 <div className='flex flex-row w-full justify-between gap-2 mb-20'>
                   { workdata.map((website, index) => (
@@ -71,7 +84,7 @@ function App() {
 
 
             {/* our team */}
-            <section className='flex flex-col w-full'>
+            <section ref={ourTeamRef} className='flex flex-col w-full'>
                 <h2 className='w-2/5 h-full mb-10 text-center text-4xl text-black flex flex-col'> Our team</h2>
                 <div className='flex flex-col w-full justify-center text-xs'>  
                     {team.map((member, index) => (
@@ -100,7 +113,6 @@ function App() {
       </div>
     </div>
   )
-    
 }
 
 export default App;
