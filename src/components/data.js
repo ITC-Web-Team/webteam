@@ -64,7 +64,7 @@ const team =
     links: {
       linkedin: "https://www.linkedin.com/in/riya-agrawal-50374628b",
       instagram: "https://www.instagram.com/riyaagrawal_2022/",
-      github: "https://github.com/seduloushaze",
+      github: "https://github.com/RiyaAgrawalRocks",
       image : '/img/riya.svg'
     }
   },
