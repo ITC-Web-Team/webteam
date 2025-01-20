@@ -4,6 +4,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'paper': '#FFFDF7',
+        'paper-alt': '#F7F3EA',
+        'ink': '#2D3748',
+        'ink-light': '#4A5568',
+        'primary': '#FF6B6B',
+        'code': '#F7F3EA',
+        'javascript': '#f1e05a',
+        'typescript': '#3178c6',
+      },
+      fontFamily: {
+        'handwritten': ['Architects Daughter', 'cursive'],
+        'sans': ['Inter', 'sans-serif'],
+        'mono': ['Fira Code', 'monospace'],
+      },
+      backgroundImage: {
+        'paper-texture': "url('/public/img/paper-texture.webp')",
+      },
       keyframes: {
         typing: {
           "0%": {
@@ -12,7 +30,7 @@ module.exports = {
           },
           "100%": {
             width: "100%"
-          }  
+          }
         },
         blink: {
           "50%": {
@@ -20,7 +38,7 @@ module.exports = {
           },
           "100%": {
             borderColor: "white"
-          }  
+          }
         }
       },
       animation: {
