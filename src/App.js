@@ -131,6 +131,18 @@ function App() {
             <div className='grid md:grid-cols-2 gap-8'>
               {[
                 {
+                  name: 'BioX Club Website',
+                  description: 'Official website for the BioX Club at IIT Bombay.',
+                  repo: 'ITC-Web-Team/biox',
+                  language: 'JavaScript'
+                },
+                {
+                  name: 'LS Mentee Portal',
+                  description: 'A portal to manage, streamline and display the final course projects of mentees.',
+                  repo: 'ITC-Web-Team/LS-25',
+                  language: 'JavaScript'
+                },
+                {
                   name: 'GC Portal',
                   description: 'The official platform for the General Championship (GC) at IIT Bombay. Facilitates management and tracking of GC events and results.',
                   repo: 'ITC-Web-Team/GC_Portal',
@@ -154,18 +166,18 @@ function App() {
                   repo: 'ITC-Web-Team/ProjectsPortal',
                   language: 'Python'
                 },
-                {
-                  name: 'Web Team Portfolio',
-                  description: 'The official portfolio website showcasing our team and projects. Built with React and modern web technologies.',
-                  repo: 'ITC-Web-Team/webteam',
-                  language: 'JavaScript'
-                },
-                {
-                  name: 'Energy Club Website',
-                  description: 'Official website for the Energy Club at IIT Bombay.',
-                  repo: 'ITC-Web-Team/EnergyClub-Website',
-                  language: 'HTML'
-                }
+                // {
+                //   name: 'Web Team Portfolio',
+                //   description: 'The official portfolio website showcasing our team and projects. Built with React and modern web technologies.',
+                //   repo: 'ITC-Web-Team/webteam',
+                //   language: 'JavaScript'
+                // },
+                // {
+                //   name: 'Energy Club Website',
+                //   description: 'Official website for the Energy Club at IIT Bombay.',
+                //   repo: 'ITC-Web-Team/EnergyClub-Website',
+                //   language: 'HTML'
+                // }
               ].map((repo, index) => (
                 <a
                   href={`https://github.com/${repo.repo}`}
