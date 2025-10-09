@@ -1,9 +1,9 @@
 import { TypeAnimation } from 'react-type-animation';
-import Music from './components/Music';
-import team, { workdata } from './components/data.js';
-import { Linkedin, Instagram, Github, GitFork, Star, Eye } from 'lucide-react';
+// import Music from './components/Music';
+import team from './components/data.js';
+import { Linkedin, Instagram, Github } from 'lucide-react';
 import { useRef } from 'react';
-import { timeline } from 'animejs';
+// import { timeline } from 'animejs';
 
 function App() {
   const whatWeDoRef = useRef(null);
