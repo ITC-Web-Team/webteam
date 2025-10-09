@@ -3,6 +3,7 @@ import Music from './components/Music';
 import team, { workdata } from './components/data.js';
 import { Linkedin, Instagram, Github, GitFork, Star, Eye } from 'lucide-react';
 import { useRef } from 'react';
+import { timeline } from 'animejs';
 
 function App() {
   const whatWeDoRef = useRef(null);
@@ -134,37 +135,43 @@ function App() {
                   name: 'BioX Club Website',
                   description: 'Official website for the BioX Club at IIT Bombay.',
                   repo: 'ITC-Web-Team/biox',
-                  language: 'JavaScript'
+                  language: 'JavaScript',
+                  timeline: 'Sep 2025 - Present'
                 },
                 {
                   name: 'LS Mentee Portal',
                   description: 'A portal to manage, streamline and display the final course projects of mentees.',
                   repo: 'ITC-Web-Team/LS-25',
-                  language: 'JavaScript'
+                  language: 'JavaScript',
+                  timeline: 'Jun 2025 - Jul 2025'
                 },
                 {
                   name: 'GC Portal',
                   description: 'The official platform for the General Championship (GC) at IIT Bombay. Facilitates management and tracking of GC events and results.',
                   repo: 'ITC-Web-Team/GC_Portal',
-                  language: 'JavaScript'
+                  language: 'JavaScript',
+                  timeline: '8 months ago'
                 },
                 {
                   name: 'ITC SSO',
                   description: 'A Django-based Single Sign-On (SSO) application that uses roll numbers as usernames. Features user registration, email verification, and password reset.',
                   repo: 'ITC-Web-Team/itc_sso',
-                  language: 'JavaScript'
+                  language: 'JavaScript',
+                  timeline: 'last year'
                 },
                 {
                   name: 'ITC Main',
                   description: 'The official website of the Institute Technical Council (ITC) built and maintained by the ITC Web Team.',
                   repo: 'ITC-Web-Team/ITC_Main',
-                  language: 'CSS'
+                  language: 'CSS',
+                  timeline: 'last year'
                 },
                 {
                   name: 'Projects Portal',
                   description: 'A platform to showcase and manage technical projects from various clubs and teams.',
                   repo: 'ITC-Web-Team/ProjectsPortal',
-                  language: 'Python'
+                  language: 'Python',
+                  timeline: 'last year'
                 },
                 // {
                 //   name: 'Web Team Portfolio',
@@ -194,6 +201,11 @@ function App() {
                       </div>
                       <p className='text-ink-light mb-4'>{repo.description}</p>
                     </div>
+                    {repo.timeline && (
+                      <div className='text-s font-medium font-semibold text-primary whitespace-nowrap'>
+                        {repo.timeline}
+                      </div>
+                    )}
                   </div>
 
                   <div className='flex items-center gap-6 text-sm'>
@@ -238,7 +250,7 @@ function App() {
                 <div key={index}
                   className='group bg-paper-alt p-6 rounded-lg border-2 border-ink border-dashed hover:transform hover:scale-102 transition-all'>
                   <div className='relative mb-4'>
-                    <img
+                    <img className='w-32 h-32 rounded-full object-cover border-4 border-ink mx-auto'
                       src={member.links.image}
                       alt={member.name}
                     />
