@@ -2,120 +2,104 @@ const team = [
   {
     data: {
       post: "Web Manager",
-      name: "Lakshaditya Singh",
-      email: "sample@iitb.ac.in",
-      branch: "Mechanical",
-      interests: ["Web Dev", "Blockchain", "Technologies"],
-      hobbies: ["Movies", "Anime", "Chess"],
+      name: "Utkarsh Tanwar",
+      email: "utkarsh.webteam@gmail.Com",
+      branch: "Chemical",
+      interests: ["Computer Vision", "Machine Learning","Web Development", "Natural Language Processing"],
+      hobbies: [" reading memes", "gaming"],
       achievements: ["InterIIT GOLD", "State Level Swimmer"]
     },
     links: {
-      linkedin: "https://linkedin.com/in/lakshaditya-singh",
-      instagram: "https://www.instagram.com/singh_lakshaditya?igsh=MXFseGFnY29qaGNtcw==",
-      github: "https://github.com/Thunder25Beast",
-      image: '/img/lakshaditya.jpeg'
+      linkedin: "https://www.linkedin.com/in/utkarsh-tanwar-400b52256?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      instagram: "https://www.instagram.com/utkarsh_tanwar77?igsh=eDBuZmp0MmxxZ2xy",
+      github: "https://github.com/icodeforlife24",
+      image: '/img/utkarsh.jpeg'
     }
   },
+
   {
     data: {
-      post: "Web Manager",
-      name: "Riya",
-      email: "sample@iitb.ac.in",
-      branch: "Civil",
-      interests: ["Web Dev", "Blockchain", "Technologies"],
-      hobbies: ["Movies", "Anime", "Chess"],
-      achievements: ["InterIIT GOLD", "State Level Swimmer"]
+      post: "Web Convener",
+      name: "Dimple Mehra",
+      email: "dimple.webteam@gmail.com",
+      branch: "Economics",
+      interests: ["Web Development", "ML"],
+      hobbies: ["dance" , ""],
+      achievements: [""]
     },
     links: {
-      linkedin: "https://www.linkedin.com/in/riya-agrawal-50374628b",
-      instagram: "https://www.instagram.com/riyaagrawal_2022?igsh=a2N3ZWdvcmYxZGZx",
-      github: "https://github.com/RiyaAgrawalRocks",
-      image: '/img/riya.jpeg'
+      linkedin: "https://www.linkedin.com/in/dimple-mehra-0b311b375?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      instagram: "https://www.instagram.com/glaxssy.dm0607/",
+      github: "https://github.com/tinaa143",
+      image: '/img/Dimple.jpg'
     }
   },
   {
     data: {
       post: "Web Convener",
-      name: "Snigdha Sahu",
-      email: "23B2458@iitb.ac.in",
+      name: "Ayush Thakur ",
+      email: "sample@iitb.ac.in",
+      branch: "Bs Chem ",
+      interests: ["Web Development"],
+      hobbies: [""],
+      achievements: [""]
+    },
+    links: {
+      linkedin: "",
+      instagram: "https://www.instagram.com/ayushthakur_23_/",
+      github: "https://github.com/Ayush-IITB23",
+      image: '/img/ayush.jpg'
+    }
+  },
+  {
+    data: {
+      post: "Web Convener",
+      name: "Mitali arya",
+      email: "mitali.webteam@gmail.com",
       branch: "MEMS",
-      interests: ["Web Development", "Technology"],
-      hobbies: ["Cricket", "Badminton", "Lawn Tennis"],
-      achievements: ["Web Convener ITC", "JEE Advanced"]
+      interests: ["Web Development"],
+      hobbies: [""],
+      achievements: [""]
     },
     links: {
-      linkedin: "https://www.linkedin.com/in/snigdha-sahu-50418233a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      instagram: "",
-      github: "https://github.com/snigdha1312",
-      image: '/img/snigdha.jpeg'
+      linkedin: "https://www.linkedin.com/in/mitali-arya-5b898b403/",
+      instagram: "https://www.instagram.com/mita.li_404/",
+      github: "https://github.com/mitaliarya421-design",
+      image: '/img/Mitaali.jpg'
     }
   },
   {
     data: {
       post: "Web Convener",
-      name: "R.Harshitha ",
-      email: "sample@iitb.ac.in",
-      branch: "Aerospace",
-      interests: ["Web Development", "C++", "Python"],
-      hobbies: ["Guitar", "Volleyball", "Billiards"],
-      achievements: ["Regional level Volleyball player"]
+      name: "Lokesh N S",
+      email: "lokesh.webteam@gmail.com",
+      branch: "Electical",
+      interests: ["Web Development"],
+      hobbies: [""],
+      achievements: [""]
     },
     links: {
-      linkedin: "https://www.linkedin.com/in/harshitha-ramagiri-b63468333/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      instagram: "https://www.instagram.com/harshitha_282007/",
-      github: "https://github.com/Harshitha-282007",
-      image: '/img/harshitha.jpg'
+      linkedin: "https://www.linkedin.com/in/lokesh-n-s-72274937a/?isSelfProfile=true",
+      instagram: "https://www.instagram.com/lokesh_ns_5631/",
+      github: "https://github.com/Lokesh5631",
+      image: '/img/lokesh.jpg'
     }
   },
   {
     data: {
       post: "Web Convener",
-      name: "Nitansh",
-      email: "demo@iitb.ac.in",
+      name: "V.Nivin",
+      email: "nivin.webteam@gmail.com",
       branch: "EP",
-      interests: ["Web Development", "UI/UX", "Graphic Design"],
-      hobbies: ["Swimming", "Chess", "Badminton"],
-      achievements: ["ICSE Class X Delhi NCR Topper", "ISC Class XII Delhi NCR Topper"]
+      interests: ["Web Development"],
+      hobbies: [""],
+      achievements: [""]
     },
     links: {
-      linkedin: "https://linkedin.com/in/nitansh1",
-      instagram: "https://instagram.com/nitannsh",
-      github: "https://github.com/real-Ni",
-      image: '/img/nitansh.jpeg'
-    }
-  },
-  {
-    data: {
-      post: "Web Convener",
-      name: "Anurag Desai",
-      email: "@iitb.ac.in",
-      branch: "Aerospace",
-      interests: ["Web Development", "Business Strategy"],
-      hobbies: ["Rubix Cubes", "Guitar", "Movies"],
-      achievements: ["Girls City Topper in JEE Mains"]
-    },
-    links: {
-      linkedin: "https://www.linkedin.com/in/anurag-desai-a37a35333/?trk=PROFILE_DROP_DOWN",
-      instagram: "https://www.instagram.com/anurag.desai.695/?hl=en",
-      github: "https://github.com/Anurag6905",
-      image: '/img/anurag.png'
-    }
-  },
-  {
-    data: {
-      post: "Web Convener",
-      name: "Tezas",
-      email: "24b3934@iitb.ac.in",
-      branch: "Electrical",
-      interests: ["Web Dev", "Trajectory Optimization", "ML/DL"],
-      hobbies: ["Rubix Cubes", "Guitar", "Movies"],
-      achievements: ["Girls City Topper in JEE Mains"]
-    },
-    links: {
-      linkedin: "https://www.linkedin.com/in/tezas-chetry-12671223b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      instagram: "",
-      github: "https://github.com/odinOnGit",
-      image: '/img/tezas.jpeg'
+      linkedin: "https://www.linkedin.com/in/nivin-v-98625a37a",
+      instagram: "https://www.instagram.com/nivin_07x/",
+      github: "https://github.com/lubero07",
+      image: '/img/nivin.jpg'
     }
   }
 ];
